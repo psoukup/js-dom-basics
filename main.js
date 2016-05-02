@@ -33,3 +33,37 @@ console.log(main);
 
 var firstOddElement = document.querySelector('.odd');
 console.log(firstOddElement);
+
+var oddAndEvenElements = document.querySelectorAll('.odd, .even');
+console.log(oddAndEvenElements);
+
+for (var i = 0; i < allListItems.length; i++) {
+  console.log((allListItems[i]).innerText);
+}
+
+for (var i = 0; i < allListItems.length; i++) {
+  console.log(allListItems[i].innerText = i);
+}
+
+console.log(allListItems);
+
+document.getElementById('main').style.backgroundColor = "goldenrod";
+
+document.getElementsByClassName('odd')[0].style.backgroundColor = "navy";
+
+var li = document.createElement('li');
+console.log('li');
+
+li.innerText = "another list item";
+console.log(li);
+
+firstUnorderedList.appendChild(li);
+console.log(firstUnorderedList);
+
+
+var anotherListElement = document.createElement('li');
+anotherListElement.innerText = "prepend this";
+firstUnorderedList.insertBefore(anotherListElement, firstUnorderedList.firstChild);
+console.log(allListItems);
+
+firstUnorderedList.removeChild(firstUnorderedList.lastChild);
